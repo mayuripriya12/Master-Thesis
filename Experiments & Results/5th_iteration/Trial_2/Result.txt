@@ -1,0 +1,46 @@
+Best val_loss So Far: 2.1406764062703587e-05
+Total elapsed time: 01h 37m 21s
+Search space summary
+Default search space size: 8
+input_unit (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 32, 'step': 10, 'sampling': None}
+n_layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+rnn_0_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+dropout (Boolean)
+{'default': False, 'conditions': []}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001, 1e-05], 'ordered': True}
+rnn_1_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+rnn_2_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+Dropout_rate (Float)
+{'default': 0.0, 'conditions': [], 'min_value': 0.0, 'max_value': 0.5, 'step': 0.1, 'sampling': None}
+Results summary
+Results in .\untitled_project
+Showing 10 best trials
+<keras_tuner.engine.objective.Objective object at 0x000001869A442EB0>
+Trial summary
+Hyperparameters:
+input_unit: 11
+n_layers: 3
+rnn_0_units: 276
+dropout: True
+learning_rate: 0.0001
+rnn_1_units: 20
+rnn_2_units: 20
+Dropout_rate: 0.0
+Score: 2.1406764062703587e-05
+Trial summary
+Hyperparameters:
+input_unit: 1
+n_layers: 3
+rnn_0_units: 52
+dropout: False
+learning_rate: 1e-05
+rnn_1_units: 52
+rnn_2_units: 84
+Dropout_rate: 0.30000000000000004
+Score: 3.589190237107687e-05

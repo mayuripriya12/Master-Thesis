@@ -1,0 +1,4 @@
+ y = np.sin(18*0.01*t) 
+
+Sample - 8k
+Adam

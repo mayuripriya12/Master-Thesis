@@ -1,0 +1,51 @@
+Best mse So Far: 7.34383356757462e-05
+Total elapsed time: 15h 15m 56s
+Search space summary
+Default search space size: 9
+input_unit (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+n_layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+rnn_0_units (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+layer_2_neurons (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+Dropout_rate (Float)
+{'default': 0.0, 'conditions': [], 'min_value': 0.0, 'max_value': 0.5, 'step': 0.1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+rnn_1_units (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+rnn_2_units (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+rnn_3_units (Int)
+{'default': None, 'conditions': [], 'min_value': 32, 'max_value': 512, 'step': 32, 'sampling': None}
+Results summary
+Results in .\untitled_project
+Showing 10 best trials
+<keras_tuner.engine.objective.Objective object at 0x000001DB4D1D6F70>
+Trial summary
+Hyperparameters:
+input_unit: 480
+n_layers: 4
+rnn_0_units: 384
+layer_2_neurons: 32
+Dropout_rate: 0.0
+learning_rate: 0.001
+rnn_1_units: 32
+rnn_2_units: 32
+rnn_3_units: 32
+Score: 7.34383356757462e-05
+Trial summary
+Hyperparameters:
+input_unit: 96
+n_layers: 1
+rnn_0_units: 96
+layer_2_neurons: 384
+Dropout_rate: 0.1
+learning_rate: 0.01
+rnn_1_units: 32
+rnn_2_units: 96
+rnn_3_units: 160
+Score: 0.005638169124722481
+>>> 

@@ -1,0 +1,143 @@
+Best val_loss So Far: 1.409645967662132e-11
+Total elapsed time: 14h 52m 30s
+Search space summary
+Default search space size: 9
+n_layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+rnn_0_units (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer_2_neurons (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+dropout (Boolean)
+{'default': False, 'conditions': []}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001, 1e-05], 'ordered': True}
+rnn_1_units (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+rnn_2_units (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+Dropout_rate (Float)
+{'default': 0.0, 'conditions': [], 'min_value': 0.0, 'max_value': 0.5, 'step': 0.1, 'sampling': None}
+rnn_3_units (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+Results summary
+Results in .\untitled_project
+Showing 10 best trials
+<keras_tuner.engine.objective.Objective object at 0x0000020786BE6DC0>
+Trial summary
+Hyperparameters:
+n_layers: 1
+rnn_0_units: 11
+layer_2_neurons: 31
+dropout: False
+learning_rate: 0.01
+rnn_1_units: 41
+rnn_2_units: 41
+Dropout_rate: 0.2
+rnn_3_units: 31
+Score: 1.409645967662132e-11
+Trial summary
+Hyperparameters:
+n_layers: 1
+rnn_0_units: 31
+layer_2_neurons: 41
+dropout: False
+learning_rate: 0.01
+rnn_1_units: 31
+rnn_2_units: 41
+Dropout_rate: 0.30000000000000004
+rnn_3_units: 1
+Score: 2.1309305882344365e-11
+Trial summary
+Hyperparameters:
+n_layers: 4
+rnn_0_units: 21
+layer_2_neurons: 41
+dropout: False
+learning_rate: 0.001
+rnn_1_units: 41
+rnn_2_units: 1
+Dropout_rate: 0.1
+rnn_3_units: 31
+Score: 7.63212045645778e-11
+Trial summary
+Hyperparameters:
+n_layers: 2
+rnn_0_units: 11
+layer_2_neurons: 21
+dropout: False
+learning_rate: 0.0001
+rnn_1_units: 41
+rnn_2_units: 31
+Dropout_rate: 0.5
+rnn_3_units: 41
+Score: 9.722747607021631e-11
+Trial summary
+Hyperparameters:
+n_layers: 1
+rnn_0_units: 41
+layer_2_neurons: 41
+dropout: False
+learning_rate: 0.001
+rnn_1_units: 1
+rnn_2_units: 1
+Dropout_rate: 0.4
+rnn_3_units: 11
+Score: 1.2043092727492127e-10
+Trial summary
+Hyperparameters:
+n_layers: 2
+rnn_0_units: 11
+layer_2_neurons: 41
+dropout: False
+learning_rate: 0.001
+rnn_1_units: 1
+Score: 1.4882435561691665e-10
+Trial summary
+Hyperparameters:
+n_layers: 2
+rnn_0_units: 11
+layer_2_neurons: 41
+dropout: True
+learning_rate: 0.001
+rnn_1_units: 41
+rnn_2_units: 41
+Dropout_rate: 0.2
+Score: 2.5175497797569335e-10
+Trial summary
+Hyperparameters:
+n_layers: 3
+rnn_0_units: 31
+layer_2_neurons: 21
+dropout: True
+learning_rate: 0.0001
+rnn_1_units: 41
+rnn_2_units: 11
+Dropout_rate: 0.5
+rnn_3_units: 11
+Score: 3.9310581873008843e-10
+Trial summary
+Hyperparameters:
+n_layers: 3
+rnn_0_units: 1
+layer_2_neurons: 41
+dropout: True
+learning_rate: 0.0001
+rnn_1_units: 31
+rnn_2_units: 11
+Dropout_rate: 0.5
+Score: 4.912500822795707e-10
+Trial summary
+Hyperparameters:
+n_layers: 2
+rnn_0_units: 41
+layer_2_neurons: 41
+dropout: True
+learning_rate: 1e-05
+rnn_1_units: 1
+rnn_2_units: 1
+Dropout_rate: 0.4
+rnn_3_units: 41
+Score: 5.559775695385127e-10
+(1980, 1)
+

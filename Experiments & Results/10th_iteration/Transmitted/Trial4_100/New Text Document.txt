@@ -1,0 +1,1 @@
+Removed first 100 values and sample size 1500

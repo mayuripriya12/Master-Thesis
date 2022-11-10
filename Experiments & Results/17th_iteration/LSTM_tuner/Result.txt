@@ -1,0 +1,136 @@
+Best val_loss So Far: 9.404678665466312e-09
+Total elapsed time: 10h 15m 08s
+Search space summary
+Default search space size: 12
+num_layers (Int)
+{'default': None, 'conditions': [], 'min_value': 0, 'max_value': 4, 'step': 1, 'sampling': None}
+last_layer_neurons (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+dropout (Boolean)
+{'default': False, 'conditions': []}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001, 1e-05], 'ordered': True}
+layer0_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [0, 1, 2, 3]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer1_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [1, 2, 3]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer2_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [2, 3]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+Dropout_rate (Float)
+{'default': 0.0, 'conditions': [], 'min_value': 0.0, 'max_value': 0.5, 'step': 0.1, 'sampling': None}
+layer0_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [1, 2, 3, 4]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer1_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [2, 3, 4]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer2_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [3, 4]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+layer3_units (Int)
+{'default': None, 'conditions': [{'class_name': 'Parent', 'config': {'name': 'num_layers', 'values': [4]}}], 'min_value': 1, 'max_value': 50, 'step': 10, 'sampling': None}
+Results summary
+Results in .\untitled_project
+Showing 10 best trials
+Trial summary
+Hyperparameters:
+num_layers: 1
+last_layer_neurons: 11
+dropout: False
+learning_rate: 0.01
+layer0_units: 41
+Dropout_rate: 0.5
+Score: 9.404678665466312e-09
+Trial summary
+Hyperparameters:
+num_layers: 1
+last_layer_neurons: 11
+dropout: False
+learning_rate: 0.001
+layer0_units: 11
+Dropout_rate: 0.2
+Score: 1.966860800154772e-08
+Trial summary
+Hyperparameters:
+num_layers: 2
+last_layer_neurons: 31
+dropout: False
+learning_rate: 0.01
+layer0_units: 31
+layer1_units: 1
+Score: 6.392737258072619e-08
+Trial summary
+Hyperparameters:
+num_layers: 1
+last_layer_neurons: 21
+dropout: False
+learning_rate: 0.001
+layer0_units: 1
+Score: 1.7374111394019565e-07
+Trial summary
+Hyperparameters:
+num_layers: 3
+last_layer_neurons: 41
+dropout: False
+learning_rate: 0.001
+layer0_units: 1
+layer1_units: 11
+layer2_units: 11
+Dropout_rate: 0.1
+Score: 2.2048252053726478e-07
+Trial summary
+Hyperparameters:
+num_layers: 2
+last_layer_neurons: 21
+dropout: True
+learning_rate: 0.0001
+layer0_units: 1
+layer1_units: 41
+Dropout_rate: 0.0
+Score: 4.7977586111377e-07
+Trial summary
+Hyperparameters:
+num_layers: 4
+last_layer_neurons: 41
+dropout: True
+learning_rate: 1e-05
+Dropout_rate: 0.5
+layer0_units: 1
+layer1_units: 1
+layer2_units: 1
+layer3_units: 1
+Score: 1.9219058534266273e-06
+Trial summary
+Hyperparameters:
+num_layers: 3
+last_layer_neurons: 11
+dropout: False
+learning_rate: 0.0001
+layer0_units: 11
+layer1_units: 1
+layer2_units: 21
+Dropout_rate: 0.0
+Score: 2.020015225904596e-06
+Trial summary
+Hyperparameters:
+num_layers: 3
+last_layer_neurons: 21
+dropout: True
+learning_rate: 1e-05
+layer0_units: 31
+layer1_units: 41
+layer2_units: 41
+Dropout_rate: 0.4
+Score: 2.0577690141484104e-06
+Trial summary
+Hyperparameters:
+num_layers: 3
+last_layer_neurons: 11
+dropout: False
+learning_rate: 1e-05
+layer0_units: 11
+layer1_units: 41
+layer2_units: 1
+Score: 2.2616958024930986e-06
+layers are :  1
+(1980, 1)
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_layer_call_fn while saving (showing 5 of 10). These functions will not be directly callable after loading.
+WARNING:absl:<keras.layers.recurrent.LSTMCell object at 0x00000205FE69B700> has the same name 'LSTMCell' as a built-in Keras object. Consider renaming <class 'keras.layers.recurrent.LSTMCell'> to avoid naming conflicts when loading with `tf.keras.models.load_model`. If renaming is not possible, pass the object in the `custom_objects` parameter of the load function.
+WARNING:absl:<keras.layers.recurrent.LSTMCell object at 0x00000205FCC22D90> has the same name 'LSTMCell' as a built-in Keras object. Consider renaming <class 'keras.layers.recurrent.LSTMCell'> to avoid naming conflicts when loading with `tf.keras.models.load_model`. If renaming is not possible, pass the object in the `custom_objects` parameter of the load function.

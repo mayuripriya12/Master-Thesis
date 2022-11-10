@@ -1,0 +1,1 @@
+Removing 2000 and reading 1500 values only

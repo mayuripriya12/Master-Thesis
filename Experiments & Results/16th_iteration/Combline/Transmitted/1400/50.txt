@@ -1,0 +1,1 @@
+validation loss is: [3.7469745e-05]

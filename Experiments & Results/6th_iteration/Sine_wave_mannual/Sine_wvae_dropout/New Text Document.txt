@@ -1,0 +1,12 @@
+def define_model():
+    model = Sequential()
+    model.add(SimpleRNN(1,return_sequences=True, input_shape=(X_train.shape[1],X_train.shape[2])))
+    model.add(SimpleRNN(116,return_sequences=True))
+    model.add(SimpleRNN(20,return_sequences=True))
+    model.add(SimpleRNN(20,return_sequences=True))
+    model.add(SimpleRNN(148))
+    model.add(Dropout(0.0))
+    
+    model.add(Dense(1))
+    model.compile(loss='mean_squared_error', optimizer=Adam(learning_rate=0.001),metrics = ['mse'])
+    return model

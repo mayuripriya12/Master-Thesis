@@ -1,0 +1,32 @@
+Best val_loss So Far: 2.409901389910374e-05
+Total elapsed time: 02h 28m 08s
+Search space summary
+Default search space size: 7
+input_unit (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 100, 'step': 10, 'sampling': None}
+n_layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+rnn_0_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+dropout (Boolean)
+{'default': False, 'conditions': []}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001, 1e-05], 'ordered': True}
+rnn_1_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+rnn_2_units (Int)
+{'default': None, 'conditions': [], 'min_value': 20, 'max_value': 512, 'step': 32, 'sampling': None}
+Results summary
+Results in .\untitled_project
+Showing 10 best trials
+<keras_tuner.engine.objective.Objective object at 0x000001F73F186F70>
+Trial summary
+Hyperparameters:
+input_unit: 61
+n_layers: 3
+rnn_0_units: 468
+dropout: False
+learning_rate: 0.001
+rnn_1_units: 20
+rnn_2_units: 20
+Score: 2.409901389910374e-05
